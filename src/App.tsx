@@ -1,4 +1,6 @@
-import MainLayout from "./components/layout/MainLayout"
+import Button from "./components/ui/Button"
+import Container from "./components/ui/Container"
+
 
 
 function App() {
@@ -6,9 +8,14 @@ function App() {
 
   return (
     <>
-      
-    <MainLayout></MainLayout>
-      
+      <Container>
+        <div className="px-2 py-2">
+          <button className="btn btn-primary">Button</button>
+          <button className="btn btn-danger">Save</button>
+         <Button className='bg-green-300' outline={true}></Button>
+        </div>
+        
+      </Container> 
     </>
   )
 }

@@ -1,0 +1,10 @@
+
+@layer components{
+    .btn{
+        @apply px-2 py-2 mr-3;
+        @apply rounded-md;
+        @apply bg-purple-400;
+        @apply bg-red-500;
+    }
+    
+}

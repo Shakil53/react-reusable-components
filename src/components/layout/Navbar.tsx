@@ -2,7 +2,7 @@
 
 const Navbar = () => {
     return (
-        <div className='h-16 w-full bg-purple-400'>
+        <div className='h-16 w-full bg-[#74E291]'>
             <h1>Navbar</h1>
         </div>
     );
