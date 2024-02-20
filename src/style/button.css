@@ -1,10 +1,23 @@
 
 @layer components{
-    .btn{
+    .btn-solid{
         @apply px-2 py-2 mr-3;
-        @apply rounded-md;
-        @apply bg-purple-400;
-        @apply bg-red-500;
+        @apply font-semibold text-white rounded-md;
+        @apply bg-purple-400 hover:bg-purple-600 focus:bg-purple-500;
+        
+    }
+    .btn-outline{
+        @apply px-2 py-2 mr-3;
+        @apply font-semibold text-purple-500 rounded-md;
+        @apply bg-purple-500 bg-opacity-10 hover:bg-opacity-20;
+        @apply border border-purple-500;
+    }
+    .btn-ghost{
+        @apply px-2 py-2 mr-3;
+        @apply font-semibold text-purple-500 rounded-md;
+        @apply bg-purple-400 bg-opacity-0 hover:bg-opacity-20 focus:bg-opacity-20;
+        @apply border border-purple-500;
+        @apply transition-all;
     }
     
 }

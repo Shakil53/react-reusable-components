@@ -1,18 +1,32 @@
-import { twMerge } from 'tailwind-merge';
-import { clsx } from 'clsx';
+
 import cn from '../../utils/cn';
+import { ButtonHTMLAttributes, DetailedHTMLProps, forwardRef } from 'react';
 
-// `bg-red-500 ${className} ${variant == 'outline' ? "border border-purple-500 bg-opacity-10 ": ''}`
+type TRef = HTMLButtonElement;
+type TVariant = 'solid' | "ghost" | "outline";
+type TButtonOptions = {
+    variant?: TVariant;
+}
+type TButton = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>,
+HTMLButtonElement> & TButtonOptions
 
-const Button = ({className, outline}) => {
+const Button = forwardRef<TRef, TButton>(({ className, variant="solid", ...rest }, ref) => {
+    
+    const getVariant = (variant: TVariant) => {
+        switch (variant) {
+            case 'outline':
+                return 'btn-outline';
+            case 'ghost':
+                return 'btn-ghost';
+            default:
+                return 'btn-solid'
+        }
+    }
     return (
         <div>
             <button
-                className={cn('bg-purple-500 px-3 py-3 mt-2 rounded-md',
-                {
-                    'border border-purple-500 bg-opacity-10': outline,
-                    
-                },
+                {...rest} ref={ref}
+                className={cn(getVariant(variant),
                     className)
                 }
             
@@ -20,6 +34,6 @@ const Button = ({className, outline}) => {
             Click</button>
         </div>
     );
-};
+});
 
 export default Button;
