@@ -10,7 +10,7 @@ type TButtonOptions = {
 type TButton = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>,
 HTMLButtonElement> & TButtonOptions
 
-const Button = forwardRef<TRef, TButton>(({ className, variant="solid", ...rest }, ref) => {
+const Button = forwardRef<TRef, TButton>(({ className, variant="solid",children, ...rest  }, ref) => {
     
     const getVariant = (variant: TVariant) => {
         switch (variant) {
@@ -31,7 +31,7 @@ const Button = forwardRef<TRef, TButton>(({ className, variant="solid", ...rest 
                 }
             
             >
-            Click</button>
+           {children}</button>
         </div>
     );
 });
