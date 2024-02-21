@@ -20,7 +20,13 @@ function App() {
           <button className="btn btn-danger">Save</button>
           <Button onClick={()=> setModal(prev => !prev)}>Open Modal</Button>
           
-          <Modal isOpen={modal} onClose={handleModalClose}><h1>This is a Modal</h1></Modal>
+          <Modal isOpen={modal} onClose={handleModalClose}>
+            <Modal.Header>
+              <h1 >This is modal <title></title></h1>
+                <Modal.CloseButton></Modal.CloseButton>
+            </Modal.Header>
+            <p className="text-sm">This is a Content</p>
+          </Modal>
         </div>
         
       </Container> 
