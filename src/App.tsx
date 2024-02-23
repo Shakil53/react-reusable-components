@@ -7,6 +7,7 @@ import ButtonNew from "./components/ButtonNew/ButtonNew";
 import Box from "./components/Animation/Box";
 import Loading from "./components/Loading/Loading";
 import ClipPath from "./components/ClipPath/ClipPath";
+import JavaScriptAnimation from "./components/JavaScriptAnimation/JavaScriptAnimation";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
       <Loading></Loading>
 
       <ClipPath></ClipPath>
+      <JavaScriptAnimation></JavaScriptAnimation>
     </>
   )
 }
