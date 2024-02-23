@@ -1,26 +1,31 @@
-import { FieldValues, useForm } from "react-hook-form";
+import { FieldValues, FormProvider, useForm } from "react-hook-form";
 import cn from "../../utils/cn";
 import Button from "../ui/Button";
 import {zodResolver} from "@hookform/resolvers/zod";
 import { SignUpSchema, TNormalForm } from "./validation";
+import InputField from "./InputField";
 
 
 
 const NormalForm = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm<TNormalForm>({
+    const methods = useForm<TNormalForm>({
         resolver: zodResolver(SignUpSchema
         ),
     })
+
+    const { register, handleSubmit, watch, formState: { errors } } = methods;
     
     const onSubmit = (data: FieldValues) => {
         console.log(data);
     }
 
+        console.log(watch('name'));
 
     const double = true;
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className={cn("border border-gray-300 rounded-lg shadow-sm w-full p-5 mx-auto", {
+        <FormProvider {...methods}>
+            <form onSubmit={handleSubmit(onSubmit)} className={cn("border border-gray-300 rounded-lg shadow-sm w-full p-5 mx-auto", {
             'max-w-5xl': double,
             'max-w-md': !double,
 
@@ -29,6 +34,10 @@ const NormalForm = () => {
                 "md:grid-cols-2": double,
             })}>
 
+                    <div className="w-full max-w-md">
+                    <label className="block" htmlFor="name">Something</label>
+                   <InputField></InputField>
+                </div>
                 <div className="w-full max-w-md">
                     <label className="block" htmlFor="name">Name</label>
                     <input type="text" id="name" {...register('name')}>
@@ -72,6 +81,7 @@ const NormalForm = () => {
             
           
         </form>
+        </FormProvider>
     );
 };
 

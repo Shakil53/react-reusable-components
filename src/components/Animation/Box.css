@@ -1,0 +1,22 @@
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: thistle;
+    animation-name: moving;
+    animation-duration: 1000ms;
+    animation-delay: 0.5s;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moving{
+    0%{transform: translate(0px);
+    background-color: blue;
+    }
+    25%{transform: translate(100px);}
+    50%{transform: translate(100px, -100px);}
+    75%{transform: translate(100px,-100px);}
+    100%{transform: translate(100px,100px);}
+}
+
