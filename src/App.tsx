@@ -8,6 +8,7 @@ import Box from "./components/Animation/Box";
 import Loading from "./components/Loading/Loading";
 import ClipPath from "./components/ClipPath/ClipPath";
 import JavaScriptAnimation from "./components/JavaScriptAnimation/JavaScriptAnimation";
+import FramerMotion from "./components/FramerMotion/FramerMotion";
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
 
       <ClipPath></ClipPath>
       <JavaScriptAnimation></JavaScriptAnimation>
+      <FramerMotion></FramerMotion>
     </>
   )
 }
