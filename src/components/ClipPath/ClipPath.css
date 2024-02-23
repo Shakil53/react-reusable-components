@@ -1,0 +1,21 @@
+.main1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: tomato;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    clip-path: circle(8% at 90% 50%);
+    transition: all ease 0.5s;
+
+}
+
+.card:hover{
+    clip-path: circle(70.7% at 50% 50%);
+}

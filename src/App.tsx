@@ -5,6 +5,8 @@ import Container from "./components/ui/Container"
 import { z } from 'zod';
 import ButtonNew from "./components/ButtonNew/ButtonNew";
 import Box from "./components/Animation/Box";
+import Loading from "./components/Loading/Loading";
+import ClipPath from "./components/ClipPath/ClipPath";
 
 
 function App() {
@@ -41,6 +43,9 @@ function App() {
       </Container> 
       <ButtonNew></ButtonNew>
       <Box></Box>
+      <Loading></Loading>
+
+      <ClipPath></ClipPath>
     </>
   )
 }
