@@ -9,6 +9,7 @@ import Loading from "./components/Loading/Loading";
 import ClipPath from "./components/ClipPath/ClipPath";
 import JavaScriptAnimation from "./components/JavaScriptAnimation/JavaScriptAnimation";
 import FramerMotion from "./components/FramerMotion/FramerMotion";
+import Lecture3 from "./components/lecture3/lecture3";
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <ClipPath></ClipPath>
       <JavaScriptAnimation></JavaScriptAnimation>
       <FramerMotion></FramerMotion>
+      <Lecture3></Lecture3>
     </>
   )
 }
