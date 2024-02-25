@@ -10,6 +10,8 @@ import ClipPath from "./components/ClipPath/ClipPath";
 import JavaScriptAnimation from "./components/JavaScriptAnimation/JavaScriptAnimation";
 import FramerMotion from "./components/FramerMotion/FramerMotion";
 import Lecture3 from "./components/lecture3/lecture3";
+import Lecture4 from "./components/lecture4/Lecture4";
+import FramerMotionHook from "./components/FramerMotionHook/FramerMotionHook";
 
 
 function App() {
@@ -52,6 +54,8 @@ function App() {
       <JavaScriptAnimation></JavaScriptAnimation>
       <FramerMotion></FramerMotion>
       <Lecture3></Lecture3>
+      <Lecture4></Lecture4>
+      <FramerMotionHook></FramerMotionHook>
     </>
   )
 }

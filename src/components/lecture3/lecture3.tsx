@@ -3,13 +3,15 @@ import { useRef } from 'react';
 
 const Lecture3 = () => {
     const parent = {
-        hidden: { opacity: 0, scale: 0.9 },
+        hidden: { scale: 0.9, x: 0, y: 0 },
         visible: {
-            opacity: 0.6,
+            x: [0,300, -300, 0 ],
+            y: [2, 300, -300, 0],
             scale: 1,
             transition: {
-                ease: 'easeInOut',
-                duration: 0.5,
+                ease: 'linear',
+                duration: 2,
+                repeat: Infinity
             }
         },
         hover:{
