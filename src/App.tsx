@@ -12,6 +12,7 @@ import FramerMotion from "./components/FramerMotion/FramerMotion";
 import Lecture3 from "./components/lecture3/lecture3";
 import Lecture4 from "./components/lecture4/Lecture4";
 import FramerMotionHook from "./components/FramerMotionHook/FramerMotionHook";
+import UseCyclehook from "./components/FramerMotionHooks/UseCyclehook";
 
 
 function App() {
@@ -49,13 +50,13 @@ function App() {
       <ButtonNew></ButtonNew>
       <Box></Box>
       <Loading></Loading>
-
       <ClipPath></ClipPath>
       <JavaScriptAnimation></JavaScriptAnimation>
       <FramerMotion></FramerMotion>
       <Lecture3></Lecture3>
       <Lecture4></Lecture4>
       <FramerMotionHook></FramerMotionHook>
+      <UseCyclehook></UseCyclehook>
     </>
   )
 }
