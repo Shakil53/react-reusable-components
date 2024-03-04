@@ -15,6 +15,7 @@ import FramerMotionHook from "./components/FramerMotionHook/FramerMotionHook";
 import UseCyclehook from "./components/FramerMotionHooks/UseCyclehook";
 import UseRefFramerMotion from "./components/FramerMotionHooks/UseRefFramerMotion";
 import UseTransformFramerMotion from "./components/FramerMotionHooks/UseTransformFramerMotion";
+import UseMotionValue from "./components/FramerMotionHooks/UseMotionValue";
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
       <UseCyclehook></UseCyclehook>
       <UseRefFramerMotion></UseRefFramerMotion>
       <UseTransformFramerMotion></UseTransformFramerMotion>
+      <UseMotionValue></UseMotionValue>
     </>
   )
 }
