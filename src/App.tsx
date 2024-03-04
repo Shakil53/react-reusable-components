@@ -13,6 +13,8 @@ import Lecture3 from "./components/lecture3/lecture3";
 import Lecture4 from "./components/lecture4/Lecture4";
 import FramerMotionHook from "./components/FramerMotionHook/FramerMotionHook";
 import UseCyclehook from "./components/FramerMotionHooks/UseCyclehook";
+import UseRefFramerMotion from "./components/FramerMotionHooks/UseRefFramerMotion";
+import UseTransformFramerMotion from "./components/FramerMotionHooks/UseTransformFramerMotion";
 
 
 function App() {
@@ -57,6 +59,8 @@ function App() {
       <Lecture4></Lecture4>
       <FramerMotionHook></FramerMotionHook>
       <UseCyclehook></UseCyclehook>
+      <UseRefFramerMotion></UseRefFramerMotion>
+      <UseTransformFramerMotion></UseTransformFramerMotion>
     </>
   )
 }
